@@ -1,0 +1,15 @@
+# > 浙江农信
+^https?:\/\/fshl\.zj96596\.com\/mfs\/MFS\/images\/20181211\/9L44502257015.png - reject
+# > 第一弹
+^https?:\/\/api\.diyidan\.net\/v0.2\/images\/flash images\/ - reject
+# > 翼支付
+^https?:\/\/mapi\.bestpay\.com\.cn\/mapi\/updateHomePageList - reject
+^https?:\/\/mapi\.bestpay\.com\.cn\/mapi\/getHomePageAds - reject
+# > 幸福绿城
+^https?:\/\/apiv44-ios\.4001113900\.com\/ad\/ - reject
+# > 曹操专车
+^https?:\/\/ccimgs\.oss-cn-hangzhou\.aliyuncs\.com\/ad\/ - reject
+^https?:\/\/cap\.caocaokeji\.cn\/bps\/queryAd\/ - reject
+^https?:\/\/cap\.caocaokeji\.cn\/bps\/queryToast\/ - reject
+
+hostname = fshl.zj96596.com,api.diyidan.net,api.bestpay.com.cn,apiv44-ios.4001113900.com,cap.caocaokeji.cn,ccimgs.oss-cn-hangzhou.aliyuncs.com
