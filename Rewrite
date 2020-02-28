@@ -1,4 +1,4 @@
-hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,*.meituan.net,*.musical.ly,*.pstatp.com,*.snssdk.com,*.uve.weibo.com,*.ydstatic.com,*pi.feng.com,4gimg.map.qq.com,a.wkanx.com,acs.m.taobao.com,act.vip.iqiyi.com,api.bjxkhc.com,api.douban.com,api.gotokeep.com,api.intsig.net,api.jr.mi.com,api.m.jd.com,api.resso.app,api.rr.tv,api.smzdm.com,api.yangkeduo.com,api.zhihu.com,*.tiktokv.com,*.tiktokcdn.com,api-mifit*.huami.com,app.api.ke.com,app.bilibili.com,appconf.mail.163.com,app.yinxiang.com,app-api.smzdm.com,c.m.163.com,cap.caocaokeji.cn,channel.beitaichufang.com,cloud.189.cn,clientaccess.10086.cn,client.mail.163.com,dxy.com,e.dangdang.com,easyreadfs.nosdn.127.net,enjoy.abchina.com,guide-acs.m.taobao.com,gw.alicdn.com,gw.csdn.net,gw-passenger.01zhuanche.com,heic.alicdn.com,huichuan.sm.cn,i.weread.qq.com,iface.iqiyi.com,img*.360buyimg.com,interface.music.163.com,ios.wps.cn,m*.amap.com,m.client.10010.com,m.tuniu.com,m.youtube.com,manga.bilibili.com,mp.weixin.qq.com,mrobot.pcauto.com.cn,ms.jr.jd.com,msspjh.emarbox.com,news.ssp.qq.com,newsso.map.qq.com,p.du.163.com,pic1cdn.cmbchina.com,r.inews.qq.com,render.alipay.com,s*.zdmimg.com,sp.kaola.com,ss0.bdstatic.com,ssl.kohsocialapp.qq.com,static.vuevideo.net,static1.keepcdn.com,support.you.163.com,s.youtube.com,thor.weidian.com,weibointl.api.weibo.cn,www.youtube.com,www.zhihu.com,youtubei.googleapis.com
+hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,*.meituan.net,*.musical.ly,*.pstatp.com,*.snssdk.com,*.uve.weibo.com,*.ydstatic.com,*pi.feng.com,4gimg.map.qq.com,acs.m.taobao.com,act.vip.iqiyi.com,api.douban.com,api.gotokeep.com,api.intsig.net,api.jr.mi.com,api.m.jd.com,api.resso.app,api.rr.tv,api.smzdm.com,api.yangkeduo.com,api.zhihu.com,*.tiktokv.com,*.tiktokcdn.com,api-mifit*.huami.com,app.api.ke.com,app.bilibili.com,appconf.mail.163.com,app.yinxiang.com,app-api.smzdm.com,c.m.163.com,cap.caocaokeji.cn,channel.beitaichufang.com,cloud.189.cn,clientaccess.10086.cn,client.mail.163.com,dxy.com,e.dangdang.com,guide-acs.m.taobao.com,gw.alicdn.com,gw-passenger.01zhuanche.com,heic.alicdn.com,iface.iqiyi.com,img*.360buyimg.com,interface.music.163.com,ios.wps.cn,m*.amap.com,m.client.10010.com,m.tuniu.com,manga.bilibili.com,mp.weixin.qq.com,ms.jr.jd.com,msspjh.emarbox.com,newsso.map.qq.com,pic1cdn.cmbchina.com,render.alipay.com,s*.zdmimg.com,sp.kaola.com,ss0.bdstatic.com,ssl.kohsocialapp.qq.com,static.vuevideo.net,static1.keepcdn.com,support.you.163.com,thor.weidian.com,weibointl.api.weibo.cn,www.youtube.com,www.zhihu.com,youtubei.googleapis.com,m.youtube.com,s.youtube.com
 
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
@@ -232,10 +232,6 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 ^https?:\/\/vv\.video\.qq\.com\/getvmind\? url reject-200
 # ^https?:\/\/.+\.mp4.+&sdtfrom=v3004 url reject-200
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+\.tc\.qq\.com\/.+p201\.1\.mp4\? url reject-200
-# >> 腾讯新闻
-^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig) url reject-200
-# >> 腾讯体育
-^https?:\/\/news\.ssp\.qq\.com\/app url reject-200
 # >> 微信
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) url reject-200
 # > 途牛
@@ -260,9 +256,6 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 ^https?:\/\/sp\.kaola\.com\/api\/openad url reject-200
 # >> 网易严选
 ^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json url reject-200
-# >> 网易蜗牛读书
-^https?:\/\/easyreadfs\.nosdn\.127\.net\/ad-material\/ url reject-200
-^https?:\/\/p\.du\.163\.com\/ad\/ url reject-200
 # >> 有道词典
 ^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish url reject-200
 ^https?:\/\/dsp-impr2\.youdao\.com\/adload.s\? url reject-200
