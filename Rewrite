@@ -1,4 +1,4 @@
-hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,*.meituan.net,*.musical.ly,*.pstatp.com,*.snssdk.com,*.uve.weibo.com,*.ydstatic.com,*pi.feng.com,4gimg.map.qq.com,acs.m.taobao.com,act.vip.iqiyi.com,api.douban.com,api.gotokeep.com,api.intsig.net,api.jr.mi.com,api.m.jd.com,api.resso.app,api.rr.tv,api.smzdm.com,api.yangkeduo.com,api.zhihu.com,*.tiktokv.com,*.tiktokcdn.com,api-mifit*.huami.com,app.api.ke.com,app.bilibili.com,appconf.mail.163.com,app.yinxiang.com,app-api.smzdm.com,c.m.163.com,cap.caocaokeji.cn,channel.beitaichufang.com,cloud.189.cn,clientaccess.10086.cn,client.mail.163.com,dxy.com,e.dangdang.com,guide-acs.m.taobao.com,gw.alicdn.com,gw-passenger.01zhuanche.com,heic.alicdn.com,iface.iqiyi.com,img*.360buyimg.com,interface.music.163.com,ios.wps.cn,m*.amap.com,m.client.10010.com,m.tuniu.com,manga.bilibili.com,mp.weixin.qq.com,ms.jr.jd.com,msspjh.emarbox.com,newsso.map.qq.com,pic1cdn.cmbchina.com,render.alipay.com,s*.zdmimg.com,sp.kaola.com,ss0.bdstatic.com,ssl.kohsocialapp.qq.com,static.vuevideo.net,static1.keepcdn.com,support.you.163.com,thor.weidian.com,weibointl.api.weibo.cn,www.youtube.com,www.zhihu.com,youtubei.googleapis.com,m.youtube.com,s.youtube.com
+hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,*.meituan.net,*.musical.ly,*.pstatp.com,*.snssdk.com,*.ydstatic.com,*pi.feng.com,4gimg.map.qq.com,ssl.kohsocialapp.qq.com,mp.weixin.qq.com,newsso.map.qq.com,*.alicdn.com,render.alipay.com,acs.m.taobao.com,guide-acs.m.taobao.com,act.vip.iqiyi.com,iface.iqiyi.com,api.douban.com,api.gotokeep.com,api.intsig.net,api.jr.mi.com,api.m.jd.com,ms.jr.jd.com,api.resso.app,api.rr.tv,api.smzdm.com,api.yangkeduo.com,api.zhihu.com,*.tiktokv.com,*.tiktokcdn.com,api-mifit*.huami.com,app.api.ke.com,app.bilibili.com,manga.bilibili.com,app.yinxiang.com,app-api.smzdm.com,cap.caocaokeji.cn,channel.beitaichufang.com,cloud.189.cn,clientaccess.10086.cn,dxy.com,e.dangdang.com,gw-passenger.01zhuanche.com,img*.360buyimg.com,interface.music.163.com,support.you.163.com,ios.wps.cn,sp.kaola.com,m*.amap.com,m.client.10010.com,m.tuniu.com,msspjh.emarbox.com,pic1cdn.cmbchina.com,s*.zdmimg.com,ss0.bdstatic.com,static.vuevideo.net,static1.keepcdn.com,thor.weidian.com,weibointl.api.weibo.cn,*.uve.weibo.com,www.zhihu.com,www.youtube.com,youtubei.googleapis.com,m.youtube.com,s.youtube.com
 
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
@@ -183,7 +183,7 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 ^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen url reject-200
 ^https?:\/\/api-mifit.+\.huami\.com\/discovery\/mi\/discovery\/.+_ad\? url reject-200
 # > 美团
-^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/.+\.(gif|jpg|jpg\.webp)$ url reject-200
+^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/.+\.(gif|jpg|jpg\.webp)$ url reject
 ^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+\.jpg url reject-200
 ^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+\.jpg\?may_covertWebp url reject-200
 ^https?:\/\/s3plus\.meituan\.net\/.+\/linglong\/.+\.(gif|jpg|mp4) url reject-200
@@ -244,12 +244,6 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 
 # W
 # > 网易
-# >> 网易邮箱
-^https?:\/\/appconf\.mail\.163\.com\/mmad\/ url reject-200
-# >> 网易新闻
-^https?:\/\/c\.m\.163\.com\/nc\/gl\/ url reject-200
-# >> 网易有钱
-^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds url reject-200
 # >> 网易云音乐
 ^https?:\/\/.+\/eapi\/(ad|log)\/ url reject-200
 # >> 网易考拉
