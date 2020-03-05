@@ -197,8 +197,6 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 ^https?:\/\/msspjh\.emarbox\.com\/getAdConfig url reject-200
 ^https?:\/\/api\.videozhishi\.com\/api\/getAdvertising url reject-200
 ^https?:\/\/api\.rr\.tv\/ad\/ url reject-200
-# > 人人影视
-^https?:\/\/ctrl\.(playcvn|zmzapi)\.(com|net)\/app\/(ads|init) url reject-200
 
 # S
 # > 搜狐
@@ -207,9 +205,7 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 ^https?:\/\/s1\.api\.tv\.itc\.cn\/v4\/mobile\/control\/switch\.json url reject-200
 ^https?:\/\/api\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap url reject-200
 # > 什么值得买
-^https?:\/\/api\.smzdm\.com\/v\d\/util\/loading url reject-200
-^https?:\/\/app-api\.smzdm\.com\/util\/loading url reject-200
-^https?:\/\/s\d\.zdmimg\.com\/www\/api\/v\d\/api\/thirdAd\.php url reject-200
+^https?:\/\/(app-)?api\.smzdm\.com\/(v\d\/)?util\/(loading|banner) url reject-200
 # > 首汽约车
 ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs url reject-200
 ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs url reject-200
