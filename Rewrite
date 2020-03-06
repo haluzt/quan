@@ -304,6 +304,7 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 ^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/preCacheAdvertise\.json url reject-200
 ^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/getAdvertisement\.json url reject-200
 ^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/ url reject-200
+^https?:\/\/mlife\.cmbchina\.com\/AdRender\/getAdsBySlotId\.json url reject-200
 # > 中国民生银行
 ^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/ url reject-200
 # > 中国移动
