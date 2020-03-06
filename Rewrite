@@ -148,8 +148,8 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 
 # G
 # > Google
-^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-img
-^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject-img
+#^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-img
+#^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject-img
 ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject-img
 ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ url reject-img
 ^https?:\/\/.+\.youtube\.com\/get_midroll_ url reject-img
@@ -235,7 +235,7 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 # ^https?:\/\/.+\.mp4.+&sdtfrom=v3004 url reject-200
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+\.tc\.qq\.com\/.+p201\.1\.mp4\? url reject-200
 # >> 微信
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) url reject-200
+#^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) url reject-200
 # > 途牛
 ^https?:\/\/m\.tuniu\.com\/api\/operation\/splash\/ url reject-200
 
