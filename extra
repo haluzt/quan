@@ -318,7 +318,7 @@ DOMAIN,imgadpai.thepaper.cn,REJECT
 DOMAIN,adsp.xunlei.com,REJECT
 DOMAIN,etl.xlmc.sandai.net,REJECT
 # > 同花顺
-DOMAIN,adm.10jqka.com.cn,REJECT
+;DOMAIN,adm.10jqka.com.cn,REJECT
 ;DOMAIN,stat.10jqka.com.cn,REJECT
 # > 太平洋
 DOMAIN,ad-analysis.pconline.com.cn,REJECT
