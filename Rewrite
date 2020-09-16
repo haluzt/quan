@@ -148,16 +148,21 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 
 # G
 # > Google
-^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject
-^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ url reject
-^https?:\/\/.+\.youtube\.com\/get_midroll_ url reject
-^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite url reject
-^https?:\/\/.+\.youtube\.com\/api\/stats\/ads url reject
-^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat url reject
-^https?:\/\/.+\.youtube\.com\/pagead\/ url reject
-^https?:\/\/.+\.youtube\.com\/ptracking url reject
+^https?+:\/\/.+?\.googlevideo\.com\/.+?(?>&oad|ctier) url reject
+^https?+:\/\/\w+?\.youtube\.com\/api\/.+?ad url reject
+^https?+:\/\/\w+?\.youtube\.com\/p(?>agead|tracking) url reject
+^https?+:\/\/youtubei\.googleapis\.com\/youtubei\/.+?(?>ad|log)_ url reject
+
+#^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject
+#^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject
+#^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject
+#^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ url reject
+#^https?:\/\/.+\.youtube\.com\/get_midroll_ url reject
+#^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite url reject
+#^https?:\/\/.+\.youtube\.com\/api\/stats\/ads url reject
+#^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat url reject
+#^https?:\/\/.+\.youtube\.com\/pagead\/ url reject
+#^https?:\/\/.+\.youtube\.com\/ptracking url reject
 
 # H
 # > 杭州市·市民卡
