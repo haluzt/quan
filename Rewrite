@@ -159,11 +159,11 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 #^https?:\/\/.+\.youtube\.com\/pagead\/ url reject
 #^https?:\/\/.+\.youtube\.com\/ptracking url reject
 # yuotube去广告
-^https?:\/\/.+\.googlevideo\.com\/.+(&oad|ctier) url reject-200
+#^https?:\/\/.+\.googlevideo\.com\/.+(&oad|ctier) url reject-200
 ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject-200
 ^https?:\/\/\w+\.youtube\.com\/api\/stats\/(ads|.+adformat) url reject-200
 ^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking) url reject-200
-
+^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) url reject-200
 # H
 # > 杭州市·市民卡
 ^https?:\/\/smkmp\.96225.com\/smkcenter\/ad/ url reject
