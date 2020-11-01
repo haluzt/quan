@@ -164,6 +164,7 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 ^https?:\/\/\w+\.youtube\.com\/api\/stats\/(ads|.+adformat) url reject-200
 ^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking) url reject-200
 ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) url reject-200
+ctier=[A-Z] url 302 ctier=A
 # H
 # > 杭州市·市民卡
 ^https?:\/\/smkmp\.96225.com\/smkcenter\/ad/ url reject
