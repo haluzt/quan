@@ -70,8 +70,8 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 # Advertising Block
 # A
 # > 阿里巴巴
-^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4}) url reject
-^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_9\d{2} url reject
+^https?:\/\/(gw|img|heic)\.alicdn\.com\/(tfs|mt|imgextra)\/.+(7\d{2}|9\d{2}|\d{4})-\d{4}\.(gif|png|jpg)  url reject
+^https?:\/\/(gw|heic)\.alicdn\.com\/(tfs|tps|imgextra)\/.+\.(png|jpg)_(1|2)200x(1|2)200q.+\.(jpg|heic|webp) url reject
 # >> 闲鱼
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/ url reject
 # >> 飞猪
