@@ -115,6 +115,12 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 # > 哔哩哔哩
 #^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/season\/rank\/cn|x\/v2\/(dm\/ad|rank.*rid=(168|5)|dataflow\/report|search\/(defaultword|trending|recommend|resource)|splash)) url reject
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject
+^https?://app\.bilibili\.com/x/resource/top/activity\?access_key url reject
+^https?://app\.bilibili\.com/x/v\d/(search/(defaultword|square)) url reject
+^https?://api\.bilibili\.com/x/v\d/dm/ad url reject
+^https?://api\.vc\.bilibili\.com/topic_svr/v\d/topic_svr url reject
+#^https?://api\.vc\.bilibili\.com/dynamic_svr/v\d/dynamic_svr/mix_uplist url reject
+^https?://app\.bilibili\.com/x/((resource/show/tab)|(v\d/((feed/index)|(account/mine)|view)))\?access_key url script-response-body https://raw.githubusercontent.com/srk24/profile/master/bilibili_all.js
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://raw.githubusercontent.com/srk24/profile/master/bilibili_splash.js
 # > 百词斩
 ^https?:\/\/7n\.bczcdn\.com\/launchad\/ url reject
