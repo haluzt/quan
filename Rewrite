@@ -1,4 +1,4 @@
-hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,*.meituan.net,*.musical.ly,*.pstatp.com,*.snssdk.com,*.ydstatic.com,*pi.feng.com,4gimg.map.qq.com,ssl.kohsocialapp.qq.com,mp.weixin.qq.com,newsso.map.qq.com,*.alicdn.com,render.alipay.com,acs.m.taobao.com,guide-acs.m.taobao.com,act.vip.iqiyi.com,iface.iqiyi.com,api.douban.com,api.gotokeep.com,api.intsig.net,api.jr.mi.com,api.m.jd.com,ms.jr.jd.com,api.resso.app,api.rr.tv,api.smzdm.com,api.yangkeduo.com,*.tiktokv.com,*.tiktokcdn.com,api-mifit*.huami.com,app.api.ke.com,app.bilibili.com,manga.bilibili.com,app.yinxiang.com,*-api.smzdm.com,cap.caocaokeji.cn,channel.beitaichufang.com,cloud.189.cn,clientaccess.10086.cn,dxy.com,e.dangdang.com,gw-passenger.01zhuanche.com,img*.360buyimg.com,interface.music.163.com,support.you.163.com,ios.wps.cn,sp.kaola.com,m*.amap.com,m.client.10010.com,m.tuniu.com,msspjh.emarbox.com,pic1cdn.cmbchina.com,s*.zdmimg.com,ss0.bdstatic.com,static.vuevideo.net,static1.keepcdn.com,thor.weidian.com,weibointl.api.weibo.cn,*.uve.weibo.com,ap*.zhihu.com,www.zhihu.com,lens.zhihu.com,pic*.zhimg.com,www.youtube.com,youtubei.googleapis.com,m.youtube.com,s.youtube.com,duckduckgo.com
+hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,*.meituan.net,*.musical.ly,*.pstatp.com,*.snssdk.com,*.ydstatic.com,*pi.feng.com,4gimg.map.qq.com,ssl.kohsocialapp.qq.com,mp.weixin.qq.com,newsso.map.qq.com,*.alicdn.com,render.alipay.com,acs.m.taobao.com,guide-acs.m.taobao.com,act.vip.iqiyi.com,iface.iqiyi.com,api.douban.com,api.gotokeep.com,api.intsig.net,api.jr.mi.com,api.m.jd.com,ms.jr.jd.com,api.resso.app,api.rr.tv,api.smzdm.com,api.yangkeduo.com,*.tiktokv.com,*.tiktokcdn.com,*.huami.com,app.api.ke.com,app.bilibili.com,manga.bilibili.com,app.yinxiang.com,*-api.smzdm.com,cap.caocaokeji.cn,channel.beitaichufang.com,cloud.189.cn,clientaccess.10086.cn,dxy.com,e.dangdang.com,gw-passenger.01zhuanche.com,img*.360buyimg.com,interface.music.163.com,support.you.163.com,ios.wps.cn,sp.kaola.com,m*.amap.com,m.client.10010.com,m.tuniu.com,msspjh.emarbox.com,pic1cdn.cmbchina.com,s*.zdmimg.com,ss0.bdstatic.com,static.vuevideo.net,static1.keepcdn.com,thor.weidian.com,weibointl.api.weibo.cn,*.uve.weibo.com,ap*.zhihu.com,www.zhihu.com,lens.zhihu.com,pic*.zhimg.com,www.youtube.com,youtubei.googleapis.com,m.youtube.com,s.youtube.com,duckduckgo.com
 
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
@@ -190,10 +190,13 @@ ctier=[A-Z] url 302 ctier=A
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ url reject
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo url reject
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject
+^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ url reject
 # > 金山 WPS
 ^https?:\/\/ios\.wps\.cn\/ad-statistics-service url reject
-^https?:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ url reject
 ^https?:\/\/\w+\.kingsoft-office-service\.com\/ad url reject
+^https?:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?[\w=&]*(c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController) url reject
+^https?:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson url reject
+^https?:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ url reject
 
 # K
 # > Keep
@@ -208,16 +211,15 @@ ctier=[A-Z] url 302 ctier=A
 ^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start url reject
 ^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ url reject
 ^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen url reject
-^https?:\/\/api-mifit.+\.huami\.com\/discovery\/mi\/discovery\/.+_ad\? url reject
+^https?:\/\/(api-mifit|api-mifit-\w+)\.huami\.com\/discovery\/mi\/discovery\/\w+_ad\? url reject
 # > 美团
-^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/.+\.(gif|jpg|jpg\.webp)$ url reject
-^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+\.jpg url reject
-^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+\.jpg\?may_covertWebp url reject
-^https?:\/\/(flow|s3)plus\.meituan\.net\/.+\/linglong\/.+\.(gif|jpg|mp4) url reject
-
+^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ url reject
+^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) url reject
+^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg url reject
+^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp url reject
 # P
 # > 拼多多
-^https?:\/\/api\.yangkeduo\.com\/api\/cappuccino\/splash url reject
+^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash url reject
 
 # R
 # > 人人视频
@@ -233,11 +235,13 @@ ctier=[A-Z] url 302 ctier=A
 ^https?:\/\/api\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap url reject
 # > 什么值得买
 ^https?:\/\/(app-)?api\.smzdm\.com\/(v\d\/)?util\/(loading|banner) url reject
+^https?:\/\/s\d\.zdmimg\.com\/www\/api\/v\d\/api\/thirdAd\.php url reject
 # > 首汽约车
 ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs url reject
 ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs url reject
 # > 苏宁
 ^https?:\/\/image\.suning\.cn\/uimg\/ma\/ad\/ url reject
+^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo url reject
 # > 扫描全能王
 ^https?:\/\/api\.intsig\.net\/user\/cs\/operating\/app\/get_startpic\/ url reject
 
@@ -251,10 +255,11 @@ ctier=[A-Z] url 302 ctier=A
 ^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/splash\/ url reject
 ^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ url reject
 # >> 腾讯视频
-#^https?:\/\/btrace.qq.com url reject
 ^https?:\/\/vv\.video\.qq\.com\/getvmind\? url reject
-# ^https?:\/\/.+\.mp4.+&sdtfrom=v3004 url reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+\.tc\.qq\.com\/.+p201\.1\.mp4\? url reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+p20\d\.1\.mp4\? url reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+=v3004 url reject
+^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 url reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+_p20\d_ url reject
 # >> 微信
 #^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) url reject
 # > 途牛
@@ -268,7 +273,9 @@ ctier=[A-Z] url 302 ctier=A
 # W
 # > 网易
 # >> 网易云音乐
-^https?:\/\/.+\/eapi\/(ad|log)\/ url reject
+#^https?:\/\/.+\/eapi\/(ad|log)\/ url reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/eapi\/ad\/ url reject
+^https?:\/\/interface(\d)?.music.163.com\/eapi\/ad\/ url reject
 # >> 网易考拉
 ^https?:\/\/sp\.kaola\.com\/api\/openad url reject
 # >> 网易严选
@@ -294,7 +301,8 @@ ctier=[A-Z] url 302 ctier=A
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/ url reject
 # > 喜马拉雅
 ^https?:\/\/\w+\.ximalaya\.com\/api\/v\d\/adRealTime url reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/ting\/preload\/ url reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/api\/v\d\/adRealTime url reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(outadservice|ting\/preload)\/ url reject
 
 # Y
 # > Youtube++
@@ -310,7 +318,10 @@ ctier=[A-Z] url 302 ctier=A
 ^https?:\/\/api\.zhihu\.com\/(launch|real_time) url reject
 ^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) url reject
 ^https?:\/\/api\.zhihu\.com\/fringe\/ad url reject
-^https?:\/\/api\.zhihu\.com\/ad- url reject
+^https?:\/\/api\.zhihu\.com\/ad url reject
+^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations url reject
+^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad url reject
+^https?:\/\/www\.zhihu\.com\/api\/v\d\/answers/\d+/recommendations url reject
 # > 字节跳动
 ^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject
 ^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/ url reject
