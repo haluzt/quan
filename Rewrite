@@ -113,9 +113,9 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 #^https?:\/\/.+\/(mixer|track2)\? url reject
 #^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do url reject
 # > 哔哩哔哩
-# ^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ url reject
-^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/season\/rank\/cn|x\/v2\/(dm\/ad|rank.*rid=(168|5)|dataflow\/report|search\/(defaultword|trending|recommend|resource)|splash)) url reject
+#^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/season\/rank\/cn|x\/v2\/(dm\/ad|rank.*rid=(168|5)|dataflow\/report|search\/(defaultword|trending|recommend|resource)|splash)) url reject
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject
+^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://raw.githubusercontent.com/srk24/profile/master/bilibili_splash.js
 # > 百词斩
 ^https?:\/\/7n\.bczcdn\.com\/launchad\/ url reject
 # > 贝太厨房
