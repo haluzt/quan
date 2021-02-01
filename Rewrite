@@ -323,14 +323,14 @@ ctier=[A-Z] url 302 ctier=A
 
 # Z
 # > 知乎
-^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad\/ url reject
-^https?:\/\/api\.zhihu\.com\/(launch|real_time) url reject
-^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) url reject
-^https?:\/\/api\.zhihu\.com\/fringe\/ad url reject
-^https?:\/\/api\.zhihu\.com\/ad url reject
-^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations url reject
-^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad url reject
-^https?:\/\/www\.zhihu\.com\/api\/v\d\/answers/\d+/recommendations url reject
+#^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad\/ url reject
+#^https?:\/\/api\.zhihu\.com\/(launch|real_time) url reject
+#^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) url reject
+#^https?:\/\/api\.zhihu\.com\/fringe\/ad url reject
+#^https?:\/\/api\.zhihu\.com\/ad url reject
+#^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations url reject
+#^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad url reject
+#^https?:\/\/www\.zhihu\.com\/api\/v\d\/answers/\d+/recommendations url reject
 # > 字节跳动
 ^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject
 ^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/ url reject
