@@ -344,8 +344,6 @@ ctier=[A-Z] url 302 ctier=A
 # > 中国工商银行
 ^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ url reject
 # > 中国招商银行
-^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/preCacheAdvertise\.json url reject
-^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/getAdvertisement\.json url reject
 ^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/ url reject
 ^https?:\/\/mlife\.cmbchina\.com\/AdRender\/getAdsBySlotId\.json url reject
 # > 中国民生银行
