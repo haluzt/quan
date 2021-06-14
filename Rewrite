@@ -72,7 +72,7 @@ hostname = *.amemv.com,*.k.sohu.com,*.tv.sohu.com,*.kingsoft-office-service.com,
 ^(http|https):\/\/api\.abema\.io\/v\d\/ip\/check url reject-200
 
 # TikTok
-(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
+#(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
 (?<=(carrier|account|sys)_region=)CN url 307 JP
 #解锁港区请取消下条注释
 #(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 8.4.0
