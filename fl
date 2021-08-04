@@ -392,7 +392,6 @@ DOMAIN-KEYWORD,wikileaks,PROXY
 DOMAIN-SUFFIX,apartmentratings.com,PROXY
 DOMAIN-SUFFIX,apartments.com,PROXY
 DOMAIN-SUFFIX,bankmobilevibe.com,PROXY
-DOMAIN-SUFFIX,bing.com,PROXY
 DOMAIN-SUFFIX,booktopia.com.au,PROXY
 DOMAIN-SUFFIX,cccat.io,PROXY
 DOMAIN-SUFFIX,centauro.com.br,PROXY
@@ -439,9 +438,6 @@ DOMAIN-SUFFIX,zattoo.com,PROXY
 USER-AGENT,Roam*,PROXY
 
 # (The Most Popular Sites)
-# > Apple
-# >> TestFlight
-DOMAIN,testflight.apple.com,PROXY
 # >> Apple URL Shortener
 DOMAIN-SUFFIX,appsto.re,PROXY
 # >> iBooks Store download
