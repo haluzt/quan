@@ -344,11 +344,11 @@ ctier=[A-Z] url 302 ctier=A
 #^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad url reject
 #^https?:\/\/www\.zhihu\.com\/api\/v\d\/answers/\d+/recommendations url reject
 # > 字节跳动
-^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject
-^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/ url reject
-^https?:\/\/[\w-]+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/img\/ad\.union\.api\/ url reject
-^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ url reject
+#^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject
+#^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/ url reject
+#^https?:\/\/[\w-]+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject
+#^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/img\/ad\.union\.api\/ url reject
+#^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ url reject
 #^https?:\/\/.+\.pstatp\.com\/img\/ad url reject
 #^https?:\/\/.+/img\/ad\.union\.api\/ url reject
 # > 中信银行
