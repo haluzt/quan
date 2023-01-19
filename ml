@@ -1,0 +1,14 @@
+host-suffix, aliyuncs.com, 5g
+-host-suffix, xunlei.com, 5g
+host, pcdn.yert.video, 5g
+host, rr5---sn-a5mekn6k.googlevideo.com, a
+host-suffix, hdslb.com, 5g
+host-suffix, xhscdn.com, 5g
+host, audiopay.pcdn.xmcdn.com, 5g
+host-suffix, music.126.net, 5g
+host, guide.v2fly.org, wifi
+host-suffix, bilivideo.net, 5g
+user-agent, *bili*, 5g
+host-suffix, bilivideo.cn, 5g
+host, iosapps.itunes.apple.com, 5g
+host-suffix, bilivideo.com, 5g
