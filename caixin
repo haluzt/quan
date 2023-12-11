@@ -1,5 +1,3 @@
-#[rewrite_local]
-
 # ～ 财新@ddgksf2013
 ^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth|groupImageValidate) url script-request-header https://gist.githubusercontent.com/ddgksf2013/c9263b025fc1dc20fccfca660da9a35d/raw/caixin.seluse.js
 ^https?:\/\/gateway\.caixin\.com\/api\/(1ucenter\/appapi|app-api\/userAuth\/getUserPowerCard) url script-response-body https://gist.githubusercontent.com/ddgksf2013/c9263b025fc1dc20fccfca660da9a35d/raw/caixin.seluse.js
