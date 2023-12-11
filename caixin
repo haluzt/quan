@@ -9,6 +9,4 @@
 ^https?:\/\/(msgapi|mappsv5|gateway|entities)\.caixin\.com\/(api\/app-api\/cxAdInfo\/selectIndexAdInfo|api\/app-api\/search\/getkeyword|api\/public\/recommendNews|api\/public\/push\/appIndex|api\/app-api\/caixinminiapp\/appinfo) url echo-response text/json echo-response https://raw.githubusercontent.com/ddgksf2013/Scripts/master/response.json
 ^https?:\/\/mappsv5\.caixin\.com\/channelv5\/list_ url script-response-body https://gist.githubusercontent.com/ddgksf2013/c9263b025fc1dc20fccfca660da9a35d/raw/caixin.seluse.js
 
-[mitm]
-
 hostname=gateway.caixin.com, gg.caixin.com, mappsv5.caixin.com, mapp*.caixin.com
